@@ -7,6 +7,9 @@ class CovidResult {
     User patient
     User admin
     CovidResultStatus result
+    Date dateCreated
+    Date lastUpdated
+    String uuid = UUID.randomUUID()
 
     static constraints = {
         patient nullable: false
